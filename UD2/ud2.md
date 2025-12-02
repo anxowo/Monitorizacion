@@ -29,7 +29,7 @@
 
 - `df -hT /` --> Muestra el espacio total, usado y disponible de la particion /.
 
-**<p align="center"><img src="img/captura2.png" width="950" height="450"></p>
+<p align="center"><img src="img/captura2.png" width="950" height="450"></p>
 
 
 
