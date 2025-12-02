@@ -9,49 +9,40 @@
 
 ### 1. FREE
 
-- `free` --> Muestra información básica de los procesos que se estan ejecutando.
+- `free` --> Muestra los valores brutos de memoria.
 
-<p align="center"><img src="img/captura8.png" width="800" height="350"></p>
+- `free -h` --> Muestra la memoria usada y libre en unidades leibles por el humano.
 
-- `ps au` --> Muestra los procesos de los usuarios de forma detallada.
+- `free -s3` --> Monitoriza la memoria de forma continua, refrescando los datos cada 3 segundos.
 
-<p align="center"><img src="img/captura1.png" width="800" height="350"></p>
+- `free -c3` --> Ejecuta la consulta de memoria 3 veces .
 
-- `ps aux` --> Muestra una vision global de todos los procesos del sistema.
-
-<p align="center"><img src="img/captura2.png" width="800" height="350"></p>
-
-- `ps -eo user,pid,%cpu,comm|head -n 6` --> Muestra los procesos con las columnas que se indican, de manera personalizada.
-
-  <p align="center"><img src="img/captura7.png" width="800" height="350"></p>
+  <p align="center"><img src="img/captura1.png" width="800" height="450"></p>
 
   -----
 
   ### 2. DF
 
-- `top` --> Muestra en tiempo real y de forma dinamica los procesos ordenados por consumo de recursos.
+- `df -h` --> Muestra el espacio en disco total, usado y disponible en unidades leibles por el humano.
 
-**<p align="center"><img src="img/captura4.png" width="800" height="350"></p>
+- `df -hT` --> Igual al anterior, pero ademas muestra el sistema de archivos.
 
-- `top -b -n 3 >top.info` --> Ejecuta top en modo batch(El modo batch hace que la salida del comando sea en texto plano) por 3 iteraciones y las guarda en un fichero llamado info.top.
+- `df -hT /` --> Muestra el espacio total, usado y disponible de la particion /.
 
-<p align="center"><img src="img/captura5.png" width="800" height="350"></p>
+**<p align="center"><img src="img/captura2.png" width="950" height="450"></p>
 
-- `htop` --> Version interactiva y mas visual de top.
 
-<p align="center"><img src="img/captura6.png" width="800" height="350"></p>
-
-- `atop` --> Muestra la carga de cpu, memoria, disco y red del equipo.
-
-<p align="center"><img src="img/captura1_1.png" width="800" height="350"></p>
 
   ### 3. DU
 
+- `du -hs` --> Muestra el resumen total del tamaño ocupado por el directorio.
 
+<p align="center"><img src="img/captura3.png" width="950" height="450"></p>
 
-
-
-
-
-
+  
+  
   ### 4. IOSTAT
+
+- `iostat` --> Muestra estadisticas de carga de la cpu y del trafico de entrada y salida.
+
+<p align="center"><img src="img/captura5.png" width="950" height="450"></p>
